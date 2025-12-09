@@ -1,0 +1,175 @@
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+/* الهامبورجر */
+.menu-icon {
+    display: none;
+    font-size: 26px;   
+    color: #000;       /* هون تتحكم باللون */
+    cursor: pointer;
+  
+}
+
+
+/* القائمة الكاملة */
+.mobile-menu {
+    position: fixed;
+    top: -100vh;          /* مخفية فوق الشاشة */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+    backdrop-filter: blur(8px); /* غباش */
+    background: rgba(255, 255, 255, 0.3);
+
+    transition: 0.45s ease-in-out;
+    z-index: 999;
+}
+
+/* زر X */
+.close-btn {
+    font-size: 35px;
+    cursor: pointer;
+    margin-bottom: 25px;     /* مسافة بين الاكس واللينكات */
+    text-align: center;
+    color: #000;
+}
+
+/* اللينكات */
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;             /* مسافة بين اللينكات */
+}
+
+.mobile-menu a {
+    font-size: 22px;
+    text-decoration: none; /* بدون خط */
+    color: #000;
+}
+
+/* لما تنفتح القائمة */
+.mobile-menu.show {
+    top: 0;    /* تنزل من فوق */
+}
+
+
+/* فقط للموبايل والآيباد */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;  /* اخفاء قائمة اللابتوب */
+    }
+
+    .menu-icon {
+        display: block;
+        margin-top: 10px;
+        
+         
+    }
+     .nav-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        color: #000;
+    }
+    
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 993px) {
+
+    /* نخفي الهامبورجر */
+    .menu-icon {
+        display: none !important;
+    }
+
+    /* نظهر اللينكات */
+    .nav-links {
+        display: block !important;
+    }
+
+    /* توزيع الأعمدة */
+    .nav-logo {
+        flex: 1;
+        order: 1; /* يسار */
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    .nav-links {
+        flex: 1;
+        order: 2; /* بالنص */
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .nav-icons {
+        flex: 1;
+        order: 3; /* يمين */
+        display: flex !important;
+        justify-content: flex-end;
+        gap: 18px;
+    }
+    .footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* كلهم بنفس الصف */
+    gap: 30px;
+}
+
+
+/* ========== 2) الآيباد (768px - 992px) ========== */
+@media (max-width: 992px) and (min-width: 768px) {
+    .footer .row {
+        display: flex;
+        flex-wrap: nowrap !important; /* أهم سطر — يخليهم كلهم على صف واحد */
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    
+}
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* العناصر تصير عمودية */
+    }
+    .intro_page, .intro_img {
+        flex: 1 1 100%; /* كل عنصر ياخذ كامل العرض */
+        text-align: center; /* يمكن النص يصير في الوسط */
+    }
+    .intro_img {
+        margin-top: 2em; /* مسافة بين النص والصورة */
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        flex-direction: column; /* نفس الفكرة، عمودي */
+    }
+    .intro_page, .intro_img {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .intro_img {
+        margin-top: 2em;
+    }
+}
