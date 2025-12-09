@@ -51,3 +51,16 @@
 
     </div>
 </nav>
+<script>
+const menuBtn = document.querySelector(".menu-icon");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeBtn = document.getElementById("closeBtn");
+
+menuBtn.onclick = () => {
+    mobileMenu.classList.add("show");
+};
+
+closeBtn.onclick = () => {
+    mobileMenu.classList.remove("show");
+};
+</script>
