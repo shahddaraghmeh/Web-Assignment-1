@@ -279,3 +279,197 @@ h1 {
 span {
     color: #007c91;
 }
+
+#welco_home {
+    margin: 13% -6% 0% 6%;
+}
+
+#img_home {
+    width: 47%;
+    margin: -23% 0% 0% 41%;
+}
+
+button.learn_more {
+    background-color: #0097a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.about .aboutUs_card {
+    flex: 1 1 50%;
+    padding: 2em;
+}
+
+.about .aboutUs_card h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+.about .aboutUs_card p {
+    font-size: 1rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-section {
+    padding: 60px 40px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 700px;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.cards {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 17vw;
+    max-width: 17vw;
+    box-shadow: 0 0 0.5em #089da1;
+    padding: 0.5vw;
+    gap: 0.5vw;
+    margin: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.cards .card:hover {
+    transform: scale(1.05);
+}
+
+.cards .card i {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+    color: #089da1;
+}
+
+.cards .card h2 {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.cards .card p {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+button {
+    background-color: #0097a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #007c91;
+}
+
+.arrivals .arrivals_container .arrivals_item a,
+.featured_book .container .book_item a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #ffffff;
+    color: #089da1;
+    text-decoration: none;
+    border: 0.1em solid #089da1;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.arrivals .arrivals_container .arrivals_item a:hover,
+.featured_book .container .book_item a:hover {
+    background-color: #089da1;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.arrivals {
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 3em;
+}
+
+.arrivals h2 {
+    margin-bottom: 1em;
+}
+
+.arrivals .arrivals_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.3em 3em;
+}
+
+.arrivals .arrivals_container .arrivals_item {
+    flex: 0 0 auto;
+    border: 1px solid #969696;
+    text-align: center;
+    margin: 1em 0.5em;
+    padding: 1em;
+    transition: box-shadow 0.3s ease;
+}
+
+.arrivals .arrivals_container .arrivals_item img {
+    width: 8em;
+    height: 12em;
+    margin: 0.5em 2em;
+    transition: transform 0.3s ease;
+}
+
+.arrivals .arrivals_container .arrivals_item img:hover {
+    transform: scale(1.1);
+}
+
+.arrivals .arrivals_container .arrivals_item:hover {
+    border: 1px solid #089da1;
+    box-shadow: 0 0 0.5em #089da1;
+}
