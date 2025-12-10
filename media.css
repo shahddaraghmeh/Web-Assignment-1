@@ -1,0 +1,33 @@
+@media (max-width: 1366px) {
+    .reviews > div:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .reviews .r1,
+    .reviews .r2,
+    .reviews .r3,
+    .reviews .r4 {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reviews > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .reviews .r1,
+    .reviews .r2,
+    .reviews .r3,
+    .reviews .r4 {
+        width: 100%;
+        max-width: 380px;
+    }
+}
