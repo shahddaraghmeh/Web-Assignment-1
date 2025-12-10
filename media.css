@@ -108,3 +108,30 @@ nav .container {
         gap: 30px;
     }
 }
+
+/* ============================================
+   🔹 TABLET (768px – 992px)
+============================================ */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-wrap: nowrap !important;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
