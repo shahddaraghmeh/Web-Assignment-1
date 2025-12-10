@@ -572,9 +572,9 @@ button {
 }
 .reviews-banner-container img {
     width: 100%;
-    height: auto;        /* يمنع التمدد */
-    border-radius: 0 !important;   /* يلغي أي radius من أي مكان */
-    object-fit: cover;   /* يخلي الصورة طبيعية ومن غير تشويه */
+    height: auto; 
+    border-radius: 0 !important; 
+    object-fit: cover; 
 }
 .reviews-banner-container {
     position: relative;
