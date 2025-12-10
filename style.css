@@ -601,3 +601,132 @@ button {
 .reviews-banner-container button:hover {
     background-color: #007c91;
 }
+
+#blog {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+#blog > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#blog > div > div {
+    width: 280px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#blog > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.blog-box {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.blog-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-box h3 {
+    font-size: medium;
+    color: #089da1;
+    padding: 4px;
+    text-align: left;
+}
+
+.blog-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #00a6b8;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.featured_book {
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 3em;
+}
+
+.featured_book h2 {
+    margin-bottom: 2em;
+}
+
+.featured_book .container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin-bottom: 4em;
+}
+
+.featured_book .container .book_item {
+    flex: 0 0 auto;
+    border: 1px solid #969696;
+    text-align: center;
+    margin: 2em 0.5em;
+    transition: box-shadow 0.3s ease;
+}
+
+.featured_book .container .book_item img {
+    width: 8em;
+    height: 12em;
+    margin: 0.5em 2em;
+}
+
+.featured_book .container .book_item h4 {
+    color: black;
+    margin-bottom: 0.5em;
+}
+
+.featured_book .container .book_item h6 {
+    color: #b2b2b2;
+    margin-bottom: 0.5em;
+}
+
+.featured_book .container .book_item h5 {
+    color: lightseagreen;
+    margin-bottom: 0.5em;
+    margin-left: 0.25em;
+}
+
+.featured_book .container .book_item:hover {
+    border: 1px solid #089da1;
+    box-shadow: 0 0 0.5em #089da1;
+}
