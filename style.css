@@ -730,3 +730,80 @@ button {
     border: 1px solid #089da1;
     box-shadow: 0 0 0.5em #089da1;
 }
+
+.footer {
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .row > div {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    gap: 1em;
+    height: 30vh;
+}
+
+.footer .row h2 {
+    font-size: 1.25rem;
+}
+
+.footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+.footer .footer_about img {
+    width: 5em;
+}
+
+.footer .contact-type {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    height: 1em;
+}
+
+.footer .contact-type img {
+    height: 1em;
+}
+
+.footer .contact-type a:hover {
+    color: #089da1;
+}
+
+.footer .news-letter .footer-list input {
+    border: 0;
+    border-radius: 2em;
+    padding: 0.6em;
+    background-color: #cacaca;
+}
+
+.footer .news-letter .footer-list button,
+.digital_book a,
+.about .aboutUs_card a,
+.intro_page a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #089da1;
+    color: #ffffff;
+    text-decoration: none;
+    border: 0.15em solid #089da1;
+    border-radius: 5px;
+    transition: 0.3s;
+}
