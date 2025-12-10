@@ -135,3 +135,56 @@ nav .container {
         gap: 20px;
     }
 }
+
+/* ============================================
+   🔹 TABLET / MOBILE (General ≤ 768px)
+============================================ */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .intro_page, .intro_img {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .intro_img {
+        margin-top: 2em;
+    }
+
+    #About {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #About .about_img {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    #About .about_img img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    #About .aboutUs_card {
+        flex: 0 0 100%;
+        padding: 1.5em;
+        text-align: center;
+    }
+
+    .digital_book {
+        padding: 8em 3em;
+    }
+}
+
+/* EXTRA small fix: 530px */
+@media (max-width: 530px) {
+    .digital_book {
+        padding: 9em 2em;
+    }
+}
+
