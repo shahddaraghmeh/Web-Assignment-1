@@ -200,3 +200,82 @@ header {
 ::-webkit-scrollbar-thumb:hover {
     background: #089da1;
 }
+
+nav {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 0.5em #289b9f;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 1vh 0;
+}
+
+nav .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container .nav-logo {
+    height: 5vh;
+}
+
+nav .container .nav-logo img {
+    height: 100%;
+}
+
+nav .container .nav-icons,
+nav .container .nav-links ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .container .nav-links ul {
+    gap: 1.25rem;
+    list-style: none;
+}
+
+nav .container .nav-links ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+nav .container .nav-links ul a:hover {
+    color: #089da1;
+    padding-bottom: 0.45em;
+    border-bottom: 0.1em solid #089da1;
+}
+
+nav .container .nav-icons {
+    gap: 1rem;
+    color: #089da1;
+    transition: transform 0.3s ease;
+}
+
+nav .container .nav-icons:hover {
+    transform: scale(1.1);
+}
+
+nav .container .nav-icons .nav_list {
+    display: none;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+#title {
+    font-size: -webkit-xxx-large;
+}
+
+span {
+    color: #007c91;
+}
