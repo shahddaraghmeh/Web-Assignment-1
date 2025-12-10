@@ -849,3 +849,80 @@ button {
         font-size: 0.8em;
     }
 }
+
+body.dark-mode, body.dark-mode header, body.dark-mode nav, body.dark-mode footer, 
+body.dark-mode section, body.dark-mode article, 
+body.dark-mode .card, body.dark-mode .arrivals_item, 
+body.dark-mode .book_item, body.dark-mode .blog-box, 
+body.dark-mode .reviews .r1, body.dark-mode .reviews .r2, 
+body.dark-mode .reviews .r3, body.dark-mode .reviews .r4 {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #222 !important;
+}
+
+
+body.dark-mode img { filter: brightness(0.8) !important; }
+
+
+body.dark-mode a, body.dark-mode i, body.dark-mode span { color: #00bcd4 !important; }
+
+
+body.dark-mode button, body.dark-mode .button,
+body.dark-mode .digital_book a, body.dark-mode .about .aboutUs_card a,
+body.dark-mode .intro_page a, body.dark-mode .reviews-banner-container button,
+body.dark-mode .learn-more, body.dark-mode .learn-more a {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #222 !important;
+}
+
+body.dark-mode button:hover, body.dark-mode .button:hover,
+body.dark-mode .digital_book a:hover, body.dark-mode .about .aboutUs_card a:hover,
+body.dark-mode .intro_page a:hover, body.dark-mode .reviews-banner-container button:hover,
+body.dark-mode .learn-more:hover, body.dark-mode .learn-more a:hover {
+    background-color: #00bcd4 !important;
+    color: #000 !important;
+    border-color: #00bcd4 !important;
+}
+
+
+body.dark-mode .card, body.dark-mode .arrivals_item, body.dark-mode .book_item,
+body.dark-mode .blog-box, body.dark-mode .reviews .r1, body.dark-mode .reviews .r2,
+body.dark-mode .reviews .r3, body.dark-mode .reviews .r4 {
+    box-shadow: 0 0 10px rgba(255,255,255,0.1) !important;
+}
+
+
+body.dark-mode ::-webkit-scrollbar-track { background: #111; }
+body.dark-mode ::-webkit-scrollbar-thumb { background: #00bcd4; border-radius: 5px; }
+body.dark-mode ::-webkit-scrollbar-thumb:hover { background: #00acc1; }
+
+
+#toggleMode {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+
+#toggleMode:hover {
+    background-color: #00bcd4;
+    color: #000;
+    transform: scale(1.1);
+}
+
+
+body.dark-mode #toggleMode::after { content: "☀️"; }
+body:not(.dark-mode) #toggleMode::after { content: "🌙"; }
