@@ -60,3 +60,51 @@ nav .container {
     justify-content: space-between;
 }
 
+
+/* ============================
+   🔹 DESKTOP (≥ 993px)
+============================ */
+@media (min-width: 993px) {
+    .menu-icon {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: block !important;
+    }
+
+    .nav-logo {
+        flex: 1;
+        order: 1;
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    .nav-links {
+        flex: 1;
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links ul {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .nav-icons {
+        flex: 1;
+        order: 3;
+        display: flex !important;
+        justify-content: flex-end;
+        gap: 18px;
+    }
+
+    .footer .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+}
