@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-image: url(image/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+.intro_img {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+}
