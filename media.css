@@ -31,3 +31,15 @@
         max-width: 380px;
     }
 }
+@media (max-width: 1204px) {
+    .our-blog .container .row .bloger {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .our-blog .container .row .bloger {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
